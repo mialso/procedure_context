@@ -1,3 +1,7 @@
+function findPrimaryUserId(userState) {
+    return userState.primaryId || '';
+}
+
 function findPrimaryUser(userState) {
     const primaryId = userState.primaryId;
     const userData = userState.byId[primaryId];
@@ -8,5 +12,6 @@ function findPrimaryUser(userState) {
 }
 
 module.exports = {
+    findPrimaryUserId,
     findPrimaryUser,
 }
