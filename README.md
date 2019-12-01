@@ -19,3 +19,7 @@
 > e.g. `findBestTrip = compose(filterTripsByUserPreferences, fetchTrips, fetchUserPreferences)(bestTripPredicate)` where 'fetchSome' is considered as an async api call
 * procedure context is activity input
 * each activity has an associated output, pure in terms of both procedure input and context
+
+#### examples:
+* state selector (see **selector_example** folder):
+> `node src/selector_example/run.js`
