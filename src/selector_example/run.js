@@ -13,6 +13,7 @@ const findPrimaryUserFileIds = compose(
     findPrimaryUser,
 );
 
+// first case where everything is correct
 const fileIds = findPrimaryUserFileIds(user);
 
 if (!equals(CORRECT_FILE_IDS, fileIds)) {
@@ -20,3 +21,10 @@ if (!equals(CORRECT_FILE_IDS, fileIds)) {
     process.exit(1);
 }
 console.log('SUCCESS: selector: fileIds');
+
+// first case where user is somehow absent and file owner is not set
+state.user.primaryId = 'user_3';
+
+const wrongFileIds = findPrimaryUserFileIds(user);
+
+console.log('WRONG: %s', wrongFileIds);
