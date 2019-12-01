@@ -1,12 +1,13 @@
 #### Problem statement
 
-* broken functional composition:
-`compose` works bad in terms of that not only particular input matters, but also the whole(part of) application state is often used
+##### broken functional composition:<br>
+* `compose` works bad in terms of that not only particular input matters, but also the whole(part of) application state is often used
 > decision making process requires different app-state pieces
-`pipe` is not enough to express logic because of inputs-only availability
+
+* `pipe` is not enough to express logic because of inputs-only availability
 > regular pattern input meaning (as previous procedure output) often makes hard to distinguish different domain subjects
 
-* async task (activity) composed of multiple procedures invocation requires separate state management
+##### async task (activity) composed of multiple procedures invocation requires separate state management
 
 #### primitives:
 * procedure: sync function invocation within single execution stack
