@@ -1,13 +1,12 @@
-const findUserFiles = (fileState) => (user) => {
+const findOwnerFileIds = (fileState) => (user) => {
     if (!user) {
         return [];
     }
     const userFiles = fileState.ids
-        .filter(fileId => fileState.byId[fileId].owner === user.id)
-        .map(fileId => fileState.byId[fileId]);
+        .filter(fileId => fileState.byId[fileId].owner === user.id);
     return userFiles;
 }
 
 module.exports = {
-    findUserFiles,
+    findOwnerFileIds,
 };
