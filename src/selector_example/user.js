@@ -1,7 +1,7 @@
-function findPrimaryUser(state) {
-    const { user } = state;
-    const primaryId = user.primaryId;
-    const userData = user.byId[primaryId];
+function findPrimaryUser(userState) {
+    debugger;
+    const primaryId = userState.primaryId;
+    const userData = userState.byId[primaryId];
     if (!userData) {
         return null;
     }

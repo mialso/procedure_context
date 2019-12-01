@@ -1,6 +1,6 @@
 #### Problem statement
 
-##### broken functional composition:<br>
+##### broken functional composition:
 * `compose` works bad in terms of that not only particular input matters, but also the whole(part of) application state is often used
 > decision making process requires different app-state pieces
 

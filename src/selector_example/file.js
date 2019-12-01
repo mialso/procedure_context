@@ -1,15 +1,13 @@
-const { findPrimaryUser } = require('./user.js');
-
-function findPrimaryUserFiles(state) {
-    const user = findPrimaryUser(state);
-
+const findUserFiles = (fileState) => (user) => {
     if (!user) {
         return [];
     }
-    const userFiles = state.file.ids.filter(fileId => state.file.byId[fileId].owner === user.id).map(fileId => state.file.byId[fileId]);
+    const userFiles = fileState.ids
+        .filter(fileId => fileState.byId[fileId].owner === user.id)
+        .map(fileId => fileState.byId[fileId]);
     return userFiles;
 }
 
 module.exports = {
-    findPrimaryUserFiles,
+    findUserFiles,
 };
