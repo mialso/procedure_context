@@ -23,7 +23,7 @@ if (!equals(CORRECT_FILE_IDS, fileIds)) {
 console.log('SUCCESS: selector: fileIds');
 
 // first case where user is somehow absent and file owner is not set
-state.user.primaryId = 'user_3';
+state.user.primaryId = 'user_4';
 
 const wrongFileIds = findPrimaryUserFileIds(user);
 

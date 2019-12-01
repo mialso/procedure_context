@@ -8,12 +8,13 @@ const state = {
         },
     },
     file: {
-        ids: ['file_1', 'file_2', 'file_3', 'file_4'],
+        ids: ['file_1', 'file_2', 'file_3', 'file_4', 'file_5'],
         byId: {
             'file_1': { name: 'File One', path: '/home/file_one.txt', owner: 'user_1' },
             'file_2': { name: 'File Two', path: '/home/file_two.txt', owner: 'user_2' },
             'file_3': { name: 'File Three', path: '/home/file_three.txt', owner: 'user_1' },
-            'file_4': { name: 'File Four', path: '/home/file_three.txt', owner: '' },
+            'file_4': { name: 'File Four', path: '/home/file_four.txt', owner: '' },
+            'file_5': { name: 'File Five', path: '/home/file_five.txt' },
         },
     },
 };
